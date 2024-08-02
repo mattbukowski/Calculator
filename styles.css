@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    justify-content: flex-end;
+    background-color: #CCC;
+}
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: 150px 500px;
+}
+
+.operators-container {
+    display: flex;
+    border: solid;
+    justify-content: center;
+    align-items: center;
+    background-color:lightsteelblue;
+}
+
+.operators {
+    display: flex;
+    flex-direction: column;
+}
+
+.digitsButton {
+    background-color: white;
+    height: 80px;
+    line-height: 80px;  
+    width: 80px;  
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px;
+    transition: 100ms;
+}
+
+.digitsButton:hover {
+    transform: scale(1.2);
+}
+
+.operatButton {
+    background-color: white;
+    height: 80px;
+    line-height: 80px;  
+    width: 80px;  
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px;
+    transition: 100ms;
+}
+
+.operatButton:hover {
+    transform: scale(1.2);
+}
+
+.digits-container {
+    display: flex;
+    border: solid;
+    justify-content: center;
+    align-items: center;
+    background-color:ivory;
+}
+
+.digits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: solid;
+    background-color:lightsteelblue;
+}
+
+.results-container {
+    align-self:center;
+    margin-bottom: auto;
+}
+
+.results {
+    display: flex;
+    border: solid;
+    background-color: white;
+    height: 100px;
+    width: 500px;
+    margin-top: 2rem;
+    border-radius: 20px;
+}
