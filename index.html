@@ -18,23 +18,29 @@
         <div class="buttons-container">
             <div class="operators-container">
                 <div class="operators">
-                    <button class="operatButton">+</button>
-                    <button class="operatButton">—</button>
-                    <button class="operatButton">x</button>
-                    <button class="operatButton">/</button>
+                    <button class="operatButton" data-selection="+">+</button>
+                    <button class="operatButton" data-selection="-">—</button>
+                    <button class="operatButton" data-selection="*">x</button>
+                    <button class="operatButton" data-selection="/">/</button>
                 </div>
             </div>
             <div class="digits-container">
                 <div class="digits">
                     <button class="digitsButton" data-selection="1">1</button>
                     <button class="digitsButton" data-selection="2">2</button>
-                    <button class="digitsButton" data-selection="3"> 3</button>
+                    <button class="digitsButton" data-selection="3">3</button>
                     <button class="digitsButton" data-selection="4">4</button>
                     <button class="digitsButton" data-selection="5">5</button>
                     <button class="digitsButton" data-selection="6">6</button>
                     <button class="digitsButton" data-selection="7">7</button>
                     <button class="digitsButton" data-selection="8">8</button>
                     <button class="digitsButton" data-selection="9">9</button>
+                </div>
+            </div>
+            <div class="equals-reset-container">
+                <div class="equals-reset">
+                    <button class = "rightButton" id ="equals" data-selection="=">=</button>
+                    <button class = "rightButton" id ="reset" data-selection="reset">C</button>
                 </div>
             </div>
         </div>

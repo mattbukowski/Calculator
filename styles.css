@@ -14,7 +14,7 @@ body {
 
 .buttons-container {
     display: grid;
-    grid-template-columns: 150px 500px;
+    grid-template-columns: 150px 500px 150px;
 }
 
 .operators-container {
@@ -80,17 +80,51 @@ body {
     background-color:lightsteelblue;
 }
 
+.equals-reset-container {
+    display: flex;
+    border: solid;
+    justify-content: center;
+    align-items: center;
+    background-color:lightsteelblue;
+}
+
+.equals-reset {
+    display: flex;
+    flex-direction: column;
+}
+
 .results-container {
     align-self:center;
     margin-bottom: auto;
 }
 
+.rightButton {
+    background-color: white;
+    height: 80px;
+    line-height: 80px;  
+    width: 80px;  
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px;
+    transition: 100ms;
+}
+
+.rightButton:hover {
+    transform: scale(1.2);
+}
+
 .results {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     border: solid;
     background-color: white;
-    height: 100px;
+    height: 200px;
     width: 500px;
     margin-top: 2rem;
     border-radius: 20px;
+    font-size: 2em;
+    font-weight: bold;
 }
