@@ -4,10 +4,11 @@ const results = document.querySelector(".results")
 const btnDigit = document.querySelectorAll(".digitsButton")
 const btnOperat = document.querySelectorAll(".operatButton")
 const equals = document.querySelector("#equals")
-const number1 = [];
-const operat = [];
-const number2 = [];
-const result = [];
+const reset = document.querySelector("#reset")
+let number1 = [];
+let operat = [];
+let number2 = [];
+let result = [];
 
 btnDigit.forEach(button => {
     button.addEventListener("click", e => {
@@ -56,7 +57,7 @@ equals.addEventListener("click", e => {
         const adding = +number1.join("") + +number2.join("")
         console.log(adding)
         results.append(adding)
-    } else if (operat[0] == "-") { 
+    } else if (operat[0] == "-") {
         const adding = +number1.join("") - +number2.join("")
         console.log(adding)
         results.append(adding)
@@ -74,3 +75,15 @@ equals.addEventListener("click", e => {
 
 results.append(result)
 console.log(result)
+
+reset.addEventListener("click", e => {
+    number1.length = 0
+    operat.length = 0
+    number2.length = 0
+    result.length = 0
+    results.append(number1)
+    results.append(operat)
+    results.append(number2)
+    results.append(result)
+    results.innerHTML = ""
+})
