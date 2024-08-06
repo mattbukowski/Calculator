@@ -1,5 +1,4 @@
 const container = document.querySelector(".container")
-container.style.cssText = `width: 800px; height: 800px;`
 const results = document.querySelector(".results")
 const btnDigit = document.querySelectorAll(".digitsButton")
 const btnOperat = document.querySelectorAll(".operatButton")
@@ -50,25 +49,27 @@ results.append(number2)
 console.log(number2)
 
 equals.addEventListener("click", e => {
-    const clickedSymbol = equals.dataset.selection
-    result.push(clickedSymbol)
-    results.append(clickedSymbol)
-    if (operat[0] == "+") {
-        const adding = +number1.join("") + +number2.join("")
-        console.log(adding)
-        results.append(adding)
-    } else if (operat[0] == "-") {
-        const adding = +number1.join("") - +number2.join("")
-        console.log(adding)
-        results.append(adding)
-    } else if (operat[0] == "*") {
-        const adding = +number1.join("") * +number2.join("")
-        console.log(adding)
-        results.append(adding)
-    } else if (operat[0] == "/") {
-        const adding = +number1.join("") / +number2.join("")
-        console.log(adding)
-        results.append(adding)
+    if (result.length == 0) {
+        const clickedSymbol = equals.dataset.selection
+        result.push(clickedSymbol)
+        results.append(clickedSymbol)
+        if (operat[0] == " + ") {
+            const adding = +number1.join("") + +number2.join("")
+            console.log(adding)
+            results.append(adding)
+        } else if (operat[0] == " - ") {
+            const adding = +number1.join("") - +number2.join("")
+            console.log(adding)
+            results.append(adding)
+        } else if (operat[0] == " * ") {
+            const adding = +number1.join("") * +number2.join("")
+            console.log(adding)
+            results.append(adding)
+        } else if (operat[0] == " / ") {
+            const adding = +number1.join("") / +number2.join("")
+            console.log(adding)
+            results.append(adding)
+        }
     }
 }
 )
